@@ -1,0 +1,24 @@
+<div class="row">
+<h1> <?php echo $this->escapeHtml($titulo); ?> </h1>
+
+
+<?php
+  echo $this->form()->openTag($form);
+  echo $this->formHidden($form->get('id'));
+?>
+<br/>
+
+<?php
+    echo $this->form($form->get('propietario'))
+?>
+br/>
+
+<?php
+    echo $this->form($form->get('articulo'))
+?>
+br/>
+
+<?php
+    echo $this->form($form->get('fecha'))
+?>
+</div>
